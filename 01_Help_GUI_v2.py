@@ -16,8 +16,11 @@ class Converter:
         self.temp_converter_label.grid(row=0)
 
         #Help Button (row1)
-        self.help_button = Button(self.converter_frame, text="help", padx=10, pady=10)
+        self.help_button = Button(self.converter_frame, text="help", font=("Arial", "14"), padx=10, pady=10, command=self.help)
         self.help_button.grid(row=1)
+
+    def help(self):
+        print("You asked for help")
 
 #main routine
 if __name__ =="__main__":

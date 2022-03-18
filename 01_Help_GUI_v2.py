@@ -12,8 +12,12 @@ class Converter:
         self.converter_frame.grid()
 
         #Temperature Conversion Heading (row 0)
-        self.temp_converter_label=Label(text="Temperature Converter", font=("Arial", "16", "bold"), bg=background_color, padx=10, pady=10)
+        self.temp_converter_label=Label(self.converter_frame,text="Temperature Converter", font=("Arial", "16", "bold"), bg=background_color, padx=10, pady=10)
         self.temp_converter_label.grid(row=0)
+
+        #Help Button (row1)
+        self.help_button = Button(self.converter_frame, text="help", padx=10, pady=10)
+        self.help_button.grid(row=1)
 
 #main routine
 if __name__ =="__main__":

@@ -55,6 +55,18 @@ class Converter:
         self.help_button=Button(self.hist_help_frame, font="Arial 12 bold", text="Help", width=5)
         self.help_button.grid(row=0, column=1)
 
+    def temp_convert(self, to):
+        print(to)
+
+        # Retrieve amount entered into Entry field
+        to_convert = self.to_convert_entry.get()
+
+        try:
+            to_convert = float(to_convert)
+            print("yay")
+
+        except ValueError:
+            print("oops")
 # #main routine
 if __name__ =="__main__":
      root = Tk()
